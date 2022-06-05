@@ -1,0 +1,10 @@
+.login-wrapper{
+  max-height: 100vh;
+  max-width: 100vh;
+  position: relative;
+  display: grid;
+  place-content: center;
+  @media screen and (min-width:760px){
+    
+  }
+}

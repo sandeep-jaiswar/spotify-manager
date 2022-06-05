@@ -1,7 +1,8 @@
 import TYPE from "../types";
 
 let initialStore = {
-  deviceDetails:[]
+  deviceDetails: [],
+  userDetails:[],
 }
 
 export default function config(state = initialStore, action) {
@@ -11,6 +12,11 @@ export default function config(state = initialStore, action) {
       return {
         ...state,
         deviceDetails: payload,
+      }
+    case TYPE.SET_USER_DETAILS:
+      return {
+        ...state,
+        userDetails:payload,
       }
     default:
       return initialStore
